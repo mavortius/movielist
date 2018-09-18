@@ -2,12 +2,12 @@ import { autoinject } from "aurelia-framework";
 
 import { Movie } from 'moviedb-promise';
 
-import { MovieApi } from './../api/index';
+import { MovieApi } from '../api/index';
 
 @autoinject
-export class PopularMovies {    
+export class PopularMovies {
   movies: Movie[]
-  
+
   constructor(private api: MovieApi) { }
 
   async attached() {

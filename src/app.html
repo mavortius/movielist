@@ -1,11 +1,10 @@
 <template>
-  <require from="./assets/css/styles.css"></require>
+  <require from="./app.css"></require>
   <require from="./components/header"></require>
-  <require from="./components/popular-movies"></require>
 
   <header></header>
 
   <div class="container">
-    <popular-movies></popular-movies>
-  </div>  
+    <router-view></router-view>
+  </div>
 </template>

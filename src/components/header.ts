@@ -1,6 +1,9 @@
+import { autoinject } from "aurelia-framework";
+import { Router } from "aurelia-router";
+
+@autoinject
 export class Header {    
   appTitle = 'Movielist';
-  
-  // tslint:disable-next-line:no-empty
-  constructor() { }
+    
+  constructor(private router: Router) { }
 }
